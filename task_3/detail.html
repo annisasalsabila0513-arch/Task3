@@ -1,0 +1,123 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Detail Pendaftar - Pelatihan Web Dasar</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+    <header class="header">
+        <h1>Pelatihan Web Dasar</h1>
+        <nav class="nav">
+            <a href="pendaftaran.html">Pendaftaran</a>
+            <a href="detail.html" class="aktif">Detail Pendaftar</a>
+        </nav>
+    </header>
+
+    <main class="container">
+
+        <section class="card">
+            <h2>Detail Informasi Pendaftar</h2>
+            <p class="deskripsi">Halaman ini menampilkan data dummy pendaftar.</p>
+
+            <table>
+                <caption>Data Pendaftar</caption>
+                <thead>
+                    <tr>
+                        <th>Keterangan</th>
+                        <th>Isi</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr>
+                        <th>Nama Lengkap</th>
+                        <td>Budi Santoso</td>
+                    </tr>
+                    <tr>
+                        <th>NIM</th>
+                        <td>123140001</td>
+                    </tr>
+                    <tr>
+                        <th>Tanggal Lahir</th>
+                        <td>14 Maret 2005</td>
+                    </tr>
+                    <tr>
+                        <th>Email</th>
+                        <td>budi.santoso@mail.com</td>
+                    </tr>
+                    <tr>
+                        <th>No. HP</th>
+                        <td>081234567890</td>
+                    </tr>
+                    <tr>
+                        <th>Jenis Kelamin</th>
+                        <td>Laki-laki</td>
+                    </tr>
+                    <tr>
+                        <th>Alamat</th>
+                        <td>Jl. Merdeka No. 10, Bandar Lampung</td>
+                    </tr>
+                    <tr>
+                        <th>Program Studi</th>
+                        <td>Teknik Informatika</td>
+                    </tr>
+                    <tr>
+                        <th>Minat Materi</th>
+                        <td>Frontend, Backend</td>
+                    </tr>
+                    <tr>
+                        <th>Status</th>
+                        <td><span id="status-pendaftaran">Menunggu verifikasi</span></td>
+                    </tr>
+                </tbody>
+            </table>
+        </section>
+
+        <section class="card">
+            <h2>Rancangan Query String</h2>
+            <p class="deskripsi">
+                (hanya contoh, datanya belum ditangkap).
+            </p>
+
+            <p class="kotak-query">detail.html?<span class="param">nama</span>=Budi+Santoso&amp;<span class="param">nim</span>=123140001&amp;<span class="param">tgl_lahir</span>=2005-03-14&amp;<span class="param">email</span>=budi.santoso%40mail.com&amp;<span class="param">no_hp</span>=081234567890&amp;<span class="param">gender</span>=laki-laki&amp;<span class="param">alamat</span>=Jl.+Merdeka+No.+10%2C+Bandar+Lampung&amp;<span class="param">prodi</span>=informatika&amp;<span class="param">minat</span>=frontend&amp;<span class="param">minat</span>=backend&amp;<span class="param">setuju</span>=on</p>
+
+            <br>
+
+            <table>
+                <caption>Daftar parameter</caption>
+                <thead>
+                    <tr>
+                        <th>Parameter</th>
+                        <th>Asal field</th>
+                        <th>Contoh nilai</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr><td>nama</td><td>input text</td><td>Budi+Santoso</td></tr>
+                    <tr><td>nim</td><td>input text (pattern 9 digit)</td><td>123140001</td></tr>
+                    <tr><td>tgl_lahir</td><td>input date</td><td>2005-03-14</td></tr>
+                    <tr><td>email</td><td>input email</td><td>budi.santoso%40mail.com</td></tr>
+                    <tr><td>no_hp</td><td>input tel</td><td>081234567890</td></tr>
+                    <tr><td>gender</td><td>radio</td><td>laki-laki</td></tr>
+                    <tr><td>alamat</td><td>textarea</td><td>Jl.+Merdeka+No.+10%2C+Bandar+Lampung</td></tr>
+                    <tr><td>prodi</td><td>select</td><td>informatika</td></tr>
+                    <tr><td>minat</td><td>checkbox (bisa lebih dari satu)</td><td>frontend, backend</td></tr>
+                    <tr><td>setuju</td><td>checkbox</td><td>on</td></tr>
+                </tbody>
+            </table>
+        </section>
+
+        <div class="aksi">
+            <a href="pendaftaran.html" class="btn sekunder">Kembali ke Pendaftaran</a>
+        </div>
+
+    </main>
+
+    <footer class="footer">
+        <p>Tugas Individu 3 - Pengembangan Aplikasi Web</p>
+    </footer>
+
+</body>
+</html>

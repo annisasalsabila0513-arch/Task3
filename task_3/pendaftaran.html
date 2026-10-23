@@ -1,0 +1,136 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Pendaftaran Pelatihan Web Dasar</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+    <header class="header">
+        <h1>Pelatihan Web Dasar</h1>
+        <nav class="nav">
+            <a href="pendaftaran.html" class="aktif">Pendaftaran</a>
+            <a href="detail.html">Detail Pendaftar</a>
+        </nav>
+    </header>
+
+    <main class="container">
+        <section class="card">
+            <h2>Form Pendaftaran</h2>
+            <p class="deskripsi">Isi data di bawah ini dengan benar, lalu klik tombol Daftar.</p>
+
+            <form id="form-pendaftaran" method="get" action="detail.html">
+
+                <fieldset>
+                    <legend>Data Diri</legend>
+                    <div class="form-grid">
+
+                        <div class="form-group penuh">
+                            <label for="nama">Nama Lengkap</label>
+                            <input type="text" id="nama" name="nama" placeholder="Masukkan nama lengkap" required>
+                        </div>
+
+                        <div class="form-group">
+                            <label for="nim">NIM</label>
+                            <input type="text" id="nim" name="nim" placeholder="Contoh: 123140001"
+                                   pattern="[0-9]{9}" title="NIM terdiri dari 9 digit angka" required>
+                            <span class="catatan">9 digit angka</span>
+                        </div>
+
+                        <div class="form-group">
+                            <label for="tgl_lahir">Tanggal Lahir</label>
+                            <input type="date" id="tgl_lahir" name="tgl_lahir" required>
+                        </div>
+
+                        <div class="form-group">
+                            <label for="email">Email</label>
+                            <input type="email" id="email" name="email" placeholder="contoh@email.com" required>
+                        </div>
+
+                        <div class="form-group">
+                            <label for="no_hp">No. HP</label>
+                            <input type="tel" id="no_hp" name="no_hp" placeholder="08xxxxxxxxxx">
+                        </div>
+
+                        <div class="form-group penuh">
+                            <label>Jenis Kelamin</label>
+                            <div class="pilihan">
+                                <label for="laki-laki">
+                                    <input type="radio" id="laki-laki" name="gender" value="laki-laki" required>Laki-laki
+                                </label>
+                                <label for="perempuan">
+                                    <input type="radio" id="perempuan" name="gender" value="perempuan">Perempuan
+                                </label>
+                            </div>
+                        </div>
+
+                        <div class="form-group penuh">
+                            <label for="alamat">Alamat</label>
+                            <textarea id="alamat" name="alamat" placeholder="Masukkan alamat lengkap"></textarea>
+                        </div>
+
+                    </div>
+                </fieldset>
+
+                <fieldset>
+                    <legend>Data Pelatihan</legend>
+                    <div class="form-grid">
+
+                        <div class="form-group penuh">
+                            <label for="prodi">Program Studi</label>
+                            <select id="prodi" name="prodi" required>
+                                <option value="">Pilih program studi</option>
+                                <option value="informatika">Teknik Informatika</option>
+                                <option value="sains-data">Sains Data</option>
+                                <option value="elektro">Teknik Elektro</option>
+                                <option value="sipil">Teknik Sipil</option>
+                            </select>
+                        </div>
+
+                        <div class="form-group penuh">
+                            <label>Minat Materi</label>
+        
+                            <div class="pilihan">
+                                <label for="frontend">
+                                    <input type="checkbox" id="frontend" name="minat" value="frontend">Frontend
+                                </label>
+                                <label for="backend">
+                                    <input type="checkbox" id="backend" name="minat" value="backend">Backend
+                                </label>
+                                <label for="basisdata">
+                                    <input type="checkbox" id="basisdata" name="minat" value="basis-data">Basis Data
+                                </label>
+                                <label for="uiux">
+                                    <input type="checkbox" id="uiux" name="minat" value="ui-ux">UI/UX
+                                </label>
+                            </div>
+                        </div>
+
+                        <div class="form-group penuh">
+                            <div class="pilihan">
+                                <label for="setuju">
+                                    <input type="checkbox" id="setuju" name="setuju" required>Data yang saya isi sudah benar
+                                </label>
+                            </div>
+                        </div>
+
+                    </div>
+                </fieldset>
+
+                <div class="aksi">
+                    <button type="reset" class="btn sekunder">Reset</button>
+                    <button type="submit" class="btn">Daftar</button>
+                </div>
+
+            </form>
+        </section>
+    </main>
+
+    <footer class="footer">
+        <p>Tugas Individu 3 - Pengembangan Aplikasi Web</p>
+    </footer>
+
+</body>
+</html>
